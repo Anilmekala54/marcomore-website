@@ -1,0 +1,27 @@
+@import "tailwindcss";
+body {
+  font-family: 'Inter', sans-serif;
+}
+html, body {
+  height: auto;
+}
+@theme {
+  --font-hurricane: "Hurricane", cursive;
+}
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
+.animate-marquee {
+  animation: marquee 25s linear infinite;
+}
+/* Hide Scrollbar Utility */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}

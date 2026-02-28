@@ -1,20 +1,39 @@
-import React from 'react'
-import { ChevronDown,MoveRight } from "lucide-react";
+import React from "react";
+import { ChevronDown, MoveRight } from "lucide-react";
 
-
-  
-      function IndustryCard({ item, isOpen, onClick }) {
+function IndustryCard({ item, isOpen, onClick }) {
   return (
-    <div className="bg-[#0000000D] w-[420px]  text-black rounded-[10px] p-[24px]  border border-black/5 transition-all duration-300">
+    <div
+      className="
+        bg-[#0000000D]
+        w-full
+        lg:w-[420px]
+        text-black
+        rounded-[10px]
+        p-6
+        sm:p-[24px]
+        border border-black/5
+        transition-all duration-300
+       
+       
+      "
+    >
 
-     
+      
       <div
         onClick={onClick}
         className="flex justify-between items-start cursor-pointer"
       >
-        <div className='flex flex-col gap-[16px]'>
-          <h3 className="font-semibold text-[16px] border-l-2 pl-2 border-[#00000026]">{item.title}</h3>
-          <p className="text-[14px] text-black/60 mt-1">{item.desc}</p>
+        <div className="flex flex-col gap-[6px] gap-3 ">
+
+          <h3 className="font-semibold text-[15px] sm:text-[16px] border-l-2 pl-2 border-[#00000026]">
+            {item.title}
+          </h3>
+
+          <p className="text-[13px] sm:text-[14px] text-black/60">
+            {item.desc}
+          </p>
+
         </div>
 
         <ChevronDown
@@ -25,38 +44,38 @@ import { ChevronDown,MoveRight } from "lucide-react";
         />
       </div>
 
-     
+      {/* Expandable Content */}
       <div
-        className={`overflow-hidden transition-all duration-500 ${
-          isOpen ? "max-h-40 mt-4 opacity-100" : "max-h-0 opacity-0"
-        }`}
+        className={`
+          overflow-hidden
+          transition-all
+          duration-500
+          ${isOpen ? "max-h-[300px] mt-4 opacity-100" : "max-h-0 opacity-0"}
+        `}
       >
-        <p className="text-[14px] text-black/70 mb-4">
+        <p className="text-[13px] sm:text-[14px] text-black/70 mb-4 leading-relaxed">
           {item.content}
         </p>
 
         <div
-                  className="
-    flex items-center justify-center gap-2
-    w-[140px] h-[37px]
-    rounded-full
-    bg-gradient-to-r from-[#E51F31] to-[#EE5125]
-    text-white font-semibold text-sm
-    cursor-pointer
-    
-    hover:scale-105
-    transition-all duration-300
-  "
-                >
-                  <span>Learn More</span>
-                  <MoveRight size={16} />
-                </div>
+          className="
+            flex items-center justify-center gap-2
+            w-full sm:w-[140px]
+            h-[37px]
+            rounded-full
+            bg-gradient-to-r from-[#E51F31] to-[#EE5125]
+            text-white font-semibold text-sm
+            cursor-pointer
+            hover:scale-105
+            transition-all duration-300
+          "
+        >
+          <span>Learn More</span>
+          <MoveRight size={16} />
+        </div>
       </div>
     </div>
   );
 }
 
-  
-
-
-export default IndustryCard
+export default IndustryCard;

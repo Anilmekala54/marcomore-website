@@ -102,29 +102,34 @@ function IndustriesCards() {
   };
 
   return (
-   <section className="bg-[#FFF9F6]  flex justify-center">
+    <section className="bg-[#FFF9F6] ">
 
-  <div className="w-full max-w-[1440px] pb-[5%] px-[5%]">
+     
+      <div className="max-w-[90%] mx-auto w-full pb-20 ">
 
-    <div className="grid gap-6 
-                    grid-cols-1 
-                    sm:grid-cols-2 
-                    lg:grid-cols-3">
+        <div
+          className="
+            grid
+            gap-4
+            lg:gap-6
+            grid-cols-1
+            sm:grid-cols-2
+            xl:grid-cols-3
+           
+          "
+        >
+          {industriesData.map((item, index) => (
+            <IndustryCard
+              key={index}
+              item={item}
+              isOpen={activeIndex === index}
+              onClick={() => toggleCard(index)}
+            />
+          ))}
+        </div>
 
-      {industriesData.map((item, index) => (
-        <IndustryCard
-          key={index}
-          item={item}
-          isOpen={activeIndex === index}
-          onClick={() => toggleCard(index)}
-        />
-      ))}
-
-    </div>
-
-  </div>
-
-</section>
+      </div>
+    </section>
   );
 }
 

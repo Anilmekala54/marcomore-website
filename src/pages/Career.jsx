@@ -1,0 +1,55 @@
+import React from "react";
+import careerbg1 from "../assets/images/career-bg.png";
+import careerMb from "../assets/images/career-mobile-bg.png";
+import { Dot } from "lucide-react";
+
+function Career() {
+  return (
+    <section
+      className="relative w-full text-white 
+                 bg-cover bg-center bg-no-repeat
+                 min-h-[450px] md:min-h-[500px]"
+      style={{
+        backgroundImage: `url(${careerMb})`,
+      }}
+    >
+    
+      <div
+        className="absolute inset-0 hidden md:block bg-cover bg-center bg-no-repeat"
+        style={{
+          backgroundImage: `url(${careerbg1})`,
+        }}
+      />
+
+    
+      
+
+      {/* Content */}
+      <div className="relative z-10 max-w-[1440px] w-[90%] mx-auto flex flex-col items-center justify-center text-center gap-5 min-h-[400px] md:min-h-[450px]">
+        
+        <div className="bg-[#FFFFFF26] backdrop-blur-sm px-4 py-1.5 rounded-full">
+          <span className="text-sm font-medium">Let’s Talk</span>
+        </div>
+
+        <h1 className="text-[44px] md:text-[52px] lg:text-[60px] font-semibold leading-tight">
+          Careers
+        </h1>
+
+        <p className="text-white max-w-[600px] text-sm sm:text-base">
+          Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+        </p>
+
+        <div className="flex gap-4 items-center">
+          <p>Home</p>
+          <div className="flex items-center">
+            <Dot className="text-[#EE5125]" />
+            <p>Careers</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  );
+}
+
+export default Career;

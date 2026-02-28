@@ -30,11 +30,11 @@ function Resources() {
   };
 
   return (
-    <section className="py-[80px]">
+    <section className="lg:py-20 py-5">
       
       <div className="max-w-[1440px] mx-auto w-[90%]">
 
-        <div className="flex flex-col lg:flex-row justify-between gap-16">
+        <div className="flex flex-col lg:flex-row justify-between gap-8 lg:gap-16">
 
           
           <div className="flex flex-col gap-4 lg:w-[30%]">
@@ -48,7 +48,7 @@ function Resources() {
           </div>
 
          
-          <div className="flex flex-col md:flex-row gap-8 lg:w-[70%]">
+          <div className="flex flex-col md:flex-row gap-2 lg:gap-8 lg:w-[70%]">
 
             {items.map((item, index) => {
               const isOpen = openIndex === index;
@@ -80,7 +80,7 @@ function Resources() {
                         : "grid-rows-[0fr] opacity-0"
                     }`}
                   >
-                    <div className="overflow-hidden bg-[#F2F2F2] px-6 py-6 rounded-b-[10px]">
+                    <div className="overflow-hidden bg-[#F2F2F2] px-2 py-2 lg:px-6 lg:py-6 rounded-b-[10px]">
 
                       {item.articles.map((article, i) => (
                         <div

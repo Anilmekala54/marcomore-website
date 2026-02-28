@@ -76,7 +76,7 @@ function Fqa() {
   };
 
   return (
-    <section className="py-[100px] bg-gradient-to-b from-[#FDE6D7] to-white text-black">
+    <section className="py-20  bg-gradient-to-b from-[#FDE6D7] to-white text-black">
 
       {/* Global Container */}
       <div className="max-w-[1440px] mx-auto w-[90%]">
@@ -94,7 +94,7 @@ function Fqa() {
           {/* LEFT CONTENT */}
           <div className="flex flex-col gap-6">
 
-            <h2 className="text-[28px] md:text-[34px] font-semibold leading-tight">
+            <h2 className="text-[22px] lg:text-[28px] md:text-[34px] font-semibold leading-tight">
               Answers To Frequently Asked Questions
             </h2>
 

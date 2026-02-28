@@ -3,25 +3,25 @@ import { ChevronRight } from "lucide-react";
 
 function AwardWinning() {
   return (
-    <section className="bg-black text-white min-h-screen pt-[120px]">
+    <section className="bg-black text-white min-h-screen  pt-[120px]">
 
       {/* Proper Layout Container */}
-      <div className="max-w-[1440px] mx-auto w-[92%] pt-[160px]">
+      <div className="max-w-[90%] mx-auto w-[90%] pt-[160px] pb-10">
 
         {/* Responsive Two Column Layout */}
-        <div className="grid lg:grid-cols-2 gap-16 items-end">
+        <div className="grid lg:grid-cols-2 gap-16 items-end lg:pb-20 xl:pb-0">
 
           {/* LEFT SIDE */}
           <div className="flex flex-col gap-8">
 
             {/* Heading */}
-            <h1 className="text-[56px] font-semibold leading-[1.2]">
-              Award-Winning <br />
+            <h1 className="text-[32px] sm:text-[44px]  lg:text-[56px] font-semibold ">
+              Award-Winning <br></br>
               Media Company
             </h1>
 
             {/* Tags */}
-            <div className="flex flex-wrap gap-6 text-[12px] font-medium text-white/80 tracking-wide">
+            <div className="flex flex-wrap gap-6 text-[12px] bg-[#00000040] font-medium text-white/80 tracking-wide">
               <span>WEB DESIGN AGENCY</span>
               <span>MARKETING AGENCY</span>
               <span>PUBLICATION AND MEDIA</span>
@@ -31,7 +31,7 @@ function AwardWinning() {
             <div className="w-[267px] h-px bg-white/25"></div>
 
             {/* Buttons */}
-            <div className="flex flex-wrap gap-4">
+            <div className="flex gap-2 lg:gap-4">
 
               {/* Primary */}
               <button
@@ -74,26 +74,42 @@ function AwardWinning() {
             </div>
           </div>
 
-          {/* RIGHT SIDE */}
-          <div className="flex flex-col gap-4 max-w-[420px] lg:ml-auto mt-12 lg:mt-0">
+         
+          <div
+  className="
+    flex flex-col gap-4 max-w-[420px]
+    lg:ml-auto  lg:mt-12 lg:mt-0
 
-            <h2 className="text-[16px] font-semibold border-b border-white inline-block w-[170px]">
-              Marcamor Consulting
-            </h2>
+      text-center lg:text-start
+    p-6 rounded-xl
 
-            <p className="text-[14px] font-medium text-white leading-relaxed">
-              We are Marcamor, a media company and an award-winning marketing
-              and web design agency.
-            </p>
+    lg:bg-transparent lg:text-white lg:text-left lg:p-0
+  "
+>
+  <h2
+    className="
+      text-[16px] font-semibold
+      border-b
+      inline-block w-fit mx-auto
 
-            <p className="text-[14px] font-medium text-white leading-relaxed">
-              Our goal is to nurture your vision and provide innovative,
-              custom solutions for all your marketing needs. We provide a
-              range of customized services including branding, website design
-              & development, SEO, marketing consultation, and more.
-            </p>
+     
+    "
+  >
+    Marcamor Consulting
+  </h2>
 
-          </div>
+  <p className="text-[14px] font-medium leading-relaxed">
+    We are Marcamor, a media company and an award-winning marketing
+    and web design agency.
+  </p>
+
+  <p className="text-[14px] font-medium leading-relaxed">
+    Our goal is to nurture your vision and provide innovative,
+    custom solutions for all your marketing needs. We provide a
+    range of customized services including branding, website design
+    & development, SEO, marketing consultation, and more.
+  </p>
+</div>
 
         </div>
       </div>

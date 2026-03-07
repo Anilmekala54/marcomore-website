@@ -1,165 +1,216 @@
 import React from "react";
 import { ChevronRight } from "lucide-react";
-import before from "../assets/images/before.svg";
-import after from "../assets/images/after.svg";
+
 import Simplification from "../assets/images/Simplification.svg";
 import simp2 from "../assets/images/simp2.svg";
 import simp3 from "../assets/images/simp3.svg";
+import Clients1 from "./Clients1";
+import tsrtc from "../assets/images/tsrtc.png"
 
 function MarcamorCreatives() {
   const techStack = [
-    "WORDPRESS",
-    "WEBFLOW",
-    "UI/UX",
-    "CUSTOM DESIGN",
-    "REACT.JS",
-    "ANGULAR.JS",
-    "VUE.JS",
-    "DJANGO",
-    "MAGENTO",
-    "BIG COMMERCE",
-    "DRUPAL",
+    "Search Engine Optimization",
+    "Email Marketing",
+    "Performance Marketing",
+    "Content Marketing",
+    "Social Media Marketing",
+    "Affiliate Marketing",
+    "Influencer Marketing",
+    "YouTube Marketing",
+    "WhatsApp Marketing",
   ];
 
-  const services = [
-    "LOGO DESIGN",
-    "GRAPHIC DESIGN",
-    "TYPOGRAPHY",
-    "ICONOGRAPHY",
-    "BRAND STYLE GUIDE",
-    "COLOUR PALETTE",
+  const bussinessConsulting = [
+    "Startup and SME Consulting",
+    "Go To Market Strategy",
+    " Franchise Consulting",
+    "Sales and Revenue Strategy",
+    "Business Process Optimization",
+  ];
+
+  const productDev = [
+    "SaaS Product Development",
+    "MVP Building for Startups",
+    "No Code and Low Code Development",
+    "ERP and CRM Integration",
   ];
 
   const brand = [
-    "BRAND POSITIONING",
-    "COMPETITOR ANALYSIS",
-    "MARKET TREND ANALYSIS",
-    "BRAND VOICE AND TONE",
-    "BRAND MESSAGING FRAMEWORK",
-    "BRAND VALUE AND PROMISE",
+    "Brand Strategy",
+    "Logo Design",
+    "Brand Identity and Guidelines",
+    "Packaging Design",
+    "Corporate Communication Design",
+    "UI/UX Design",
   ];
 
-  const stats = [
-    { image: Simplification, label: "1500+ Reviews" },
-    { image: simp2, label: "200+ Clients" },
-    { image: simp3, label: "8+ Years" },
+  const app = [
+    "Custom Web and App Design",
+    "E-commerce Development",
+    "Mobile App Development Android iOS",
+    "API Integration",
+    "Maintenance and AMC Plans",
+  ];
+
+  const performanceAnalyst = [
+    "Marketing Analytics and BI Reporting",
+    "GTM and Analytics",
+    "Heatmap and Behavior Tracking",
+    " KPI Dashboard Setup",
+    "Conversion Optimization",
+  ];
+
+  const marketing = [
+    "Market Feasibility Studies",
+    "Consumer Behavior Analysis",
+    "Competitor Analysis",
+    " Brand Perception Studies",
+    "Industry and Trends Reports",
+    "Customer Segmentation and Process Building",
+    " Product Testing and Feedback Loops",
+    " Geographical Market Entry Studies",
   ];
 
   return (
-    <section className="bg-[#FFF9F6] text-black py-[80px]">
+    <>
+      <section className="bg-[#FFF9F6] text-black py-[80px]">
+        <div className="max-w-[90%] mx-auto flex flex-col">
 
-      <div className="max-w-[90%] mx-auto ">
-
-        {/* Badge */}
-        <div className="bg-white rounded-[100px] w-[111px] h-[30px] flex items-center justify-center">
-          <p className="text-[14px] font-medium text-black/60">
-            Our Services
-          </p>
-        </div>
-
-        {/* MAIN LAYOUT */}
-        <div className="flex flex-col lg:flex-row gap-12 lg:gap-[100px] items-start mt-[40px]">
-
-          {/* LEFT SIDE */}
-          <div className="flex flex-col gap-[34px] lg:sticky lg:top-[120px] self-start h-fit w-full lg:w-auto">
-
-            <h2 className=" font-semibold text-[20px] lg:text-[24px]">
-              Customized & creative marketing <br />
-              solutions for businesses
-            </h2>
-
-            <div className="flex justify-center items-end py-[16px] gap-[12px] bg-[#A9A9A9] rounded-[10px] w-full lg:w-[364px] h-[204px]">
-              <h2 className="text-[20px] lg:text-[24px] font-bold text-white">
-                Leaside Blvd
-              </h2>
-              <button className="h-[42px] min-w-[162px] px-6 rounded-full text-[12px] font-semibold bg-white flex items-center justify-center gap-2">
-                READ OUR CASE
-                <ChevronRight size={16} />
-              </button>
-            </div>
-
-            <div className="lg:flex lg:flex-col flex  gap-[16px] w-full lg:w-auto">
-              <button className="h-[42px] w-full lg:w-[212px] px-6 rounded-full text-[10px] lg:text-[12px] font-semibold bg-gradient-to-r from-[#EE5125] to-[#E51F31] flex items-center justify-center gap-2 text-white">
-                REQUEST A PROPOSAL
-                <ChevronRight size={16} />
-              </button>
-
-              <button className="h-[42px] w-full lg:w-[150px] text-[10px] lg:text-[12px] px-4 rounded-full text-[12px] font-semibold border border-black/50 flex items-center justify-center gap-2 uppercase">
-                CONTACT US
-                <ChevronRight size={16} />
-              </button>
-            </div>
+          <div className="bg-white rounded-[100px] w-[111px] h-[30px] flex items-center justify-center">
+            <p className="text-[14px] font-medium text-black/60">
+              Our Services
+            </p>
           </div>
 
-          {/* RIGHT SIDE */}
-          <div className="flex flex-col gap-[20px] flex-1 w-full">
+          <div className="flex flex-col lg:flex-row gap-12 lg:gap-20 items-start mt-[40px]">
 
-            <h2 className="text-[28px] lg:text-[36px] font-bold">
-              Marcamor Creative Services
-            </h2>
+            
+            <div className="flex flex-col gap-[34px] lg:sticky lg:top-[120px] self-start h-fit w-full lg:w-auto">
 
-            <div className="flex flex-col lg:flex-row gap-[24px]">
+              <h2 className="font-medium text-[20px] capitalize">
+                Customized & creative marketing <br />
+                solutions for businesses
+              </h2>
 
-              {/* COLUMN 1 */}
-              <div className="flex flex-col gap-[24px] flex-1 w-full">
+   <div 
+  className="relative flex flex-col gap-3 py-[16px] px-4 rounded-[10px] w-full lg:w-[364px] min-h-[204px] bg-center bg-cover bg-no-repeat"
+  style={{ backgroundImage: `url(${tsrtc})` }}
+>
+  
+<div className="bg-black/10 rounded-2xl absolute inset-0 "></div>
+ 
+  <div className="mt-auto flex justify-between">
+    <h2 className="text-[20px] lg:text-[24px] font-bold text-white">
+    TSRTC
+  </h2>
+    
+    <button className="group inline-flex items-center gap-2 px-3 h-[34px] rounded-full text-[12px] font-semibold bg-white">
+      <span className="relative">
+        READ OUR CASE
+        <span className="absolute left-0 -bottom-1 h-[1px] w-0 bg-black transition-all duration-300 group-hover:w-full"></span>
+      </span>
+      <ChevronRight size={16} />
+    </button>
 
-                {/* Web Design */}
-                <div className="bg-white rounded-[10px] flex flex-col px-[24px] py-[34px] gap-[24px] h-auto lg:h-[560px]">
-                  <h2 className="text-[24px] font-semibold">
-                    Web Design & Development
+    
+
+  </div>
+</div>
+
+              <div className="flex gap-[16px] w-full lg:w-auto">
+
+              <button
+  className="group inline-flex items-center gap-2 h-[42px] px-6 rounded-full text-[12px] font-semibold bg-gradient-to-r from-[#EE5125] to-[#E51F31] text-white"
+>
+  <span className="relative">
+    REQUEST A PROPOSAL
+    <span className="absolute left-0 -bottom-1 h-[1px] w-0 bg-white transition-all duration-300 group-hover:w-full"></span>
+  </span>
+
+  <ChevronRight size={16} />
+</button>
+
+               <button
+  className="group inline-flex self-start items-center gap-2 h-[42px] px-4 rounded-full text-[12px] font-semibold border border-black/50 uppercase"
+>
+  <span className="relative">
+    CONTACT US
+    <span className="absolute left-0 -bottom-1 h-[1px] w-0 bg-black transition-all duration-300 group-hover:w-full"></span>
+  </span>
+
+  <ChevronRight size={16} />
+</button>
+
+              </div>
+
+            </div>
+
+            
+            <div className="flex flex-col gap-[20px] flex-1 w-full">
+
+              <h2 className="text-[28px] lg:text-[36px] font-bold">
+                Marcamor Creative Services
+              </h2>
+
+              {/* CARDS GRID */}
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-[24px]">
+
+               
+                <div className="bg-white rounded-[10px] w-full flex flex-col px-[24px] py-[34px] gap-[24px]">
+
+                  <h2 className="lg:text-[24px] text-[20px]  font-semibold">
+                    Digital Marketing
                   </h2>
+
                   <p className="text-[14px]">
-                   At Marcamor, we redefine what it means to work with a  <strong>web design agency</strong> . Our team of award-winning web designers and developers combines creativity and technical expertise to craft digital experiences that captivate your audience.
+                    At Marcamor, we design integrated digital growth systems
+                    that combine organic visibility, paid acquisition, and
+                    audience engagement into one measurable framework.
                   </p>
 
-                  <button className="text-left text-[14px] font-medium">
-                    Read more
-                  </button>
-
-                  <div className="flex flex-wrap gap-[6px]">
+                  <div className="flex flex-wrap gap-[4px]">
                     {techStack.map((item, index) => (
                       <button
                         key={index}
-                        className="px-4 py-2 text-[12px] font-medium text-black bg-[#f5f5f5] rounded-full uppercase"
+                        className="px-3 py-1.5 text-[12px] font-medium text-black bg-[#f5f5f5] rounded-full uppercase"
                       >
                         {item}
                       </button>
                     ))}
                   </div>
 
-                  <div className="bg-black/20 h-[1px] mt-auto"></div>
+                  <div className="bg-black/40 h-[1px] mt-auto"></div>
 
-                  <div className="lg:flex lg:flex-col flex sm:flex-row justify-between  lg:gap-4">
-                    <button className="h-[42px] w-full lg:w-auto px-2 lg:px-4 rounded-full text-[10px] lg:text-[12px] font-semibold border border-black/50 flex items-center justify-center gap-2 uppercase">
-                      WEB DESIGN SERVICES
-                      <ChevronRight size={16} />
-                    </button>
+               <button
+  className="group inline-flex self-start items-center gap-2 px-4 h-10 rounded-full text-[12px] font-semibold border border-black/50 uppercase hover:bg-black hover:text-white transition-all duration-300"
+>
+  <span className="relative">
+    Digital Marketing
+    <span className="absolute left-0 -bottom-1 h-[1px] w-0 bg-current transition-all duration-300 group-hover:w-full"></span>
+  </span>
 
-                    <button className="h-[42px] w-full lg:w-auto px-4 rounded-full text-[12px] text-[10px] lg:text-[12px]  font-semibold text-black/50 uppercase">
-                      VIEW OUR WORK
-                    </button>
-                  </div>
+  <ChevronRight size={16} />
+</button>
+
                 </div>
 
-                {/* Visual Branding */}
-                <div className="bg-white rounded-[10px] flex flex-col px-[24px] py-[34px] gap-[24px] h-auto lg:h-[560px]">
-                  <h2 className="text-[24px] font-semibold">
-                    Visual Branding
+                {/* CARD */}
+                <div className="bg-white rounded-[10px] w-full flex flex-col px-[24px] py-[34px] gap-[24px]">
+
+                  <h2 className="lg:text-[24px] text-[20px] font-semibold">
+                    Business Consulting
                   </h2>
 
                   <p className="text-[14px]">
-                   Every successful website starts with a carefully crafted SEO strategy. This ensures that your website not only ranks well but also delivers a seamless and relevant experience to users
+                    Our consulting division focuses on structured business
+                    growth, operational efficiency, and scalable revenue models.
                   </p>
 
-                  <button className="text-left text-[14px] font-medium">
-                    Read more
-                  </button>
-
-                  <div className="flex flex-wrap gap-[6px]">
-                    {services.map((item, index) => (
+                  <div className="flex flex-wrap gap-[4px]">
+                    {bussinessConsulting.map((item, index) => (
                       <button
                         key={index}
-                        className="px-4 py-2 text-[12px] font-medium text-black bg-[#f5f5f5] rounded-full uppercase"
+                        className="px-3 py-1.5 text-[12px] font-medium text-black bg-[#f5f5f5] rounded-full uppercase"
                       >
                         {item}
                       </button>
@@ -168,124 +219,143 @@ function MarcamorCreatives() {
 
                   <div className="bg-black/20 h-[1px] mt-auto"></div>
 
-                  <button className="h-[42px]  w-[132px] px-4 rounded-full text-[10px] lg:text-[12px] font-semibold border border-black/50 flex items-center justify-center gap-2 uppercase">
-                    view more
-                    <ChevronRight size={16} />
-                  </button>
+                 <button
+  className="group inline-flex self-start items-center gap-2 px-4 h-10 rounded-full text-[12px] font-semibold border border-black/50 uppercase hover:bg-black hover:text-white transition-all duration-300"
+>
+  <span className="relative">
+    Business Consulting
+    <span className="absolute left-0 -bottom-1 h-[1px] w-0 bg-current transition-all duration-300 group-hover:w-full"></span>
+  </span>
+
+  <ChevronRight size={16} />
+</button>
+
                 </div>
 
-                {/* Consultation */}
-                <div className="bg-white rounded-[10px] flex flex-col px-[24px] py-[34px] gap-[24px] h-auto lg:h-[300px]">
-                  <h2 className="text-[24px] font-semibold">
-                    Consultation & Audit
-                  </h2>
-                  <p className="text-[14px]">
-                    Tailored solutions for your business through one-on-one personalized sessions.
-                  </p>
+                {/* CARD */}
+                <div className="bg-white rounded-[10px] w-full flex flex-col px-[24px] py-[34px] gap-[24px]">
 
-                  <div className="bg-black/20 h-[1px] mt-auto"></div>
-
-                  <button className="h-[42px] w-[132px] px-4 text-[10px] lg:text-[12px] rounded-full text-[12px] font-semibold border border-black/50 flex items-center justify-center gap-2 uppercase">
-                    view more
-                    <ChevronRight size={16} />
-                  </button>
-                </div>
-              </div>
-
-              {/* COLUMN 2 */}
-              <div className="flex flex-col gap-[24px] flex-1 w-full">
-
-                {/* SEO */}
-                <div className="bg-white rounded-[10px] flex flex-col px-[24px] py-[34px] gap-[24px] h-auto lg:h-[560px]">
-                  <h2 className="text-[24px] font-semibold">
-                    Search Engine Optimization
+                  <h2 className="lg:text-[24px] text-[20px] font-semibold">
+                    Technology and Product Development
                   </h2>
 
                   <p className="text-[14px]">
-                    Every successful website starts with a carefully crafted SEO strategy. This ensures that your website not only ranks well but also delivers a seamless and relevant experience to users
+                    We build scalable SaaS platforms, MVPs, and enterprise-grade
+                    systems that support innovation and operational growth.
                   </p>
 
-                  <div className="flex justify-center items-center gap-4">
-                    <img src={before} alt="before" className="w-full sm:w-[167px] h-[74px]" />
-                    <img src={after} alt="after" className="w-full sm:w-[167px] h-[74px]" />
+                  <div className="flex flex-wrap gap-[4px]">
+                    {productDev.map((item, index) => (
+                      <button
+                        key={index}
+                        className="px-3 py-1.5 text-[12px] font-medium text-black bg-[#f5f5f5] rounded-full uppercase"
+                      >
+                        {item}
+                      </button>
+                    ))}
                   </div>
 
-                  <div className="bg-black/20 h-[1px] mt-auto"></div>
+                  <div className="bg-black/20 h-[1px]"></div>
 
-                  <button className="h-[42px] w-[132px] px-4 rounded-full text-[12px] font-semibold border border-black/50 flex items-center justify-center gap-2 uppercase">
-                    see plans
-                    <ChevronRight size={16} />
-                  </button>
+                 <button
+  className="group inline-flex self-start items-center gap-2 px-4 h-10 rounded-full text-[12px] font-semibold border border-black/50 uppercase hover:bg-black hover:text-white transition-all duration-300"
+>
+  <span className="relative">
+    Technology and Product Development
+    <span className="absolute left-0 -bottom-1 h-[1px] w-0 bg-current transition-all duration-300 group-hover:w-full"></span>
+  </span>
+
+  <ChevronRight size={16} />
+</button>
+
                 </div>
 
-                {/* Brand Research */}
-                <div className="bg-white rounded-[10px] flex flex-col px-[24px] py-[34px] gap-[24px] h-auto lg:h-[560px]">
-                  <h2 className="text-[24px] font-semibold">
-                    Brand Research & Strategy
+                {/* CARD */}
+                <div className="bg-white rounded-[10px] w-full flex flex-col px-[24px] py-[34px] gap-[24px]">
+
+                  <h2 className="lg:text-[24px] text-[20px] font-semibold">
+                    Branding and Design
                   </h2>
 
                   <p className="text-[14px]">
-                    Effective brand research and a well-defined brand strategy are the cornerstones of a successful business. At Marcamor, our award-winning team combines creativity, precision, and industry expertise to unearth the insights that shape your brand’s direction.
+                    We build structured brand ecosystems that align strategy,
+                    identity, and communication into a cohesive market presence.
                   </p>
 
-                  <div className="flex flex-wrap gap-[6px]">
+                  <div className="flex flex-wrap gap-[4px]">
                     {brand.map((item, index) => (
                       <button
                         key={index}
-                        className="px-4 py-2 text-[12px] font-medium text-black bg-[#f5f5f5] rounded-full uppercase"
+                        className="px-3 py-1.5 text-[12px] font-medium text-black bg-[#f5f5f5] rounded-full uppercase"
                       >
                         {item}
                       </button>
                     ))}
                   </div>
 
-                  <div className="bg-black/20 h-[1px] mt-auto"></div>
+                  <div className="bg-black/20 h-[1px]"></div>
 
-                  <button className="h-[42px] w-[132px] px-4 rounded-full text-[12px] font-semibold border border-black/50 flex items-center justify-center gap-2 uppercase">
-                    view more
-                    <ChevronRight size={16} />
-                  </button>
-                </div>
+                  <button
+  className="group inline-flex self-start items-center gap-2 px-4 h-10 rounded-full text-[12px] font-semibold border border-black/50 uppercase hover:bg-black hover:text-white transition-all duration-300"
+>
+  <span className="relative">
+    Branding and Design
+    <span className="absolute left-0 -bottom-1 h-[1px] w-0 bg-current transition-all duration-300 group-hover:w-full"></span>
+  </span>
 
-                {/* UI/UX */}
-                <div className="bg-white rounded-[10px] flex flex-col px-[24px] py-[34px] gap-[24px] h-auto lg:h-[300px]">
-                  <h2 className="lg:text-[24px] text-[20px] font-semibold">
-                    User Interface & User Experience
-                  </h2>
+  <ChevronRight size={16} />
+</button>
 
-                  <p className="text-[14px]">
-                    User-centric designs ensuring intuitive and satisfying digital experiences.
-                  </p>
-
-                  <div className="bg-black/20 h-[1px] mt-auto"></div>
-
-                  <button className="h-[42px] w-[132px] px-4 rounded-full text-[12px] font-semibold border border-black/50 flex items-center justify-center gap-2 uppercase">
-                    view more
-                    <ChevronRight size={16} />
-                  </button>
                 </div>
 
               </div>
+
+              {/* LAST CARD */}
+              <div className="bg-white rounded-[10px] w-full flex flex-col px-[24px] py-[34px] gap-[24px] mt-[24px]">
+
+                <h2 className="lg:text-[24px] text-[20px] font-semibold">
+                  Market Research and Consumer Insights
+                </h2>
+
+                <p className="text-[14px]">
+                  We conduct structured research to uncover consumer behavior,
+                  competitive landscapes, and emerging market opportunities.
+                </p>
+
+                <div className="flex flex-wrap gap-[4px]">
+                  {marketing.map((item, index) => (
+                    <button
+                      key={index}
+                      className="px-3 py-1.5 text-[12px] font-medium text-black bg-[#f5f5f5] rounded-full uppercase"
+                    >
+                      {item}
+                    </button>
+                  ))}
+                </div>
+
+                <div className="bg-black/20 h-[1px]"></div>
+
+               <button
+  className="group inline-flex self-start items-center gap-2 px-4 h-10 rounded-full text-[12px] font-semibold border border-black/50 uppercase hover:bg-black hover:text-white transition-all duration-300"
+>
+  <span className="relative">
+    Market Research and Consumer Insights
+    <span className="absolute left-0 -bottom-1 h-[1px] w-0 bg-current transition-all duration-300 group-hover:w-full"></span>
+  </span>
+
+  <ChevronRight size={16} />
+</button>
+              </div>
+
             </div>
+
           </div>
-        </div>
 
-       
-        <div className="lg:grid lg:grid-cols-1  lg:grid-cols-3 gap-10 hidden lg:gap-20 items-center mt-20 text-center">
-          {stats.map((item, index) => (
-            <div key={index} className="flex flex-col items-center gap-4">
-              <img
-                src={item.image}
-                alt="stat"
-                className="w-[80px] h-[80px] lg:w-[110px] lg:h-[110px]"
-              />
-              <p className="text-[16px] font-semibold">{item.label}</p>
-            </div>
-          ))}
         </div>
+      </section>
 
-      </div>
-    </section>
+      <Clients1 />
+    </>
   );
 }
 

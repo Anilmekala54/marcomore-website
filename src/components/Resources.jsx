@@ -92,7 +92,7 @@ function Resources() {
                         </div>
                       ))}
 
-                      <button className="mt-4 bg-white px-6 py-3 rounded-full text-sm font-semibold flex items-center gap-2 hover:text-[#F05623] transition">
+                      <button className="mt-4 bg-white px-6 py-3 rounded-full text-sm font-semibold flex items-center gap-2 hover:underline hover:text-[#F05623] transition">
                         {item.exploreText}
                         <ChevronRight size={16} />
                       </button>

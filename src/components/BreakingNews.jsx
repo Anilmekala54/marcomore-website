@@ -5,11 +5,26 @@ function BreakingNews() {
   const scrollRef = useRef(null);
 
   const newsItems = [
-    "Tesla Unveils Upgraded Model S and X With Long Range,...",
-    "Oilers Stanley Cup Final, Panthers One Win Away From...",
-    "Mattel Taps Open AI: First AI-Powered Barbie Toy Arrives...",
-    "WhatsApp to Start Showing Ads in App for the First Time",
-    "Kering Names Renault’s Luca de Meo as New CEO in Bold Bid...",
+   {
+    date:"2 days ago",
+    title:"Digital marketing budgets are shifting toward performanc... based models.",
+   },
+   {
+    date:"2 days ago",
+    title:"Search engines are prioritizing intent driven content over... keyword density.",
+   },
+    {
+    date:"3 days ago",
+    title:"Businesses are investing heavily in brand clarity to... stand out in competitive markets.",
+   },
+   {
+    date:"3 days ago",
+    title:"Marketing teams are adopting automation and analytics dri... decision making.",
+   },
+    {
+    date:"3 days ago",
+    title:"Companies are focusing on scalable digital platforms to... support long term growth.",
+   },
   ];
 
   const scrollNext = () => {
@@ -27,10 +42,10 @@ function BreakingNews() {
   return (
     <section className="bg-black text-white py-[60px]">
 
-      {/* Global Container */}
+   
       <div className="max-w-[1440px] mx-auto w-[90%]">
 
-        {/* Header */}
+      
         <div className="flex items-center justify-between mb-10">
 
           <div className="flex items-center gap-6">
@@ -46,8 +61,8 @@ function BreakingNews() {
 
         </div>
 
-        {/* Scroll Area */}
-        <div className="relative">
+     
+        <div className="relative ">
 
           <div
             ref={scrollRef}
@@ -56,14 +71,14 @@ function BreakingNews() {
             {newsItems.map((item, index) => (
               <div
                 key={index}
-                className="snap-start min-w-[260px] md:min-w-[320px] border-l-2 border-white/20 pl-6"
+                className="snap-start min-w-[260px] md:min-w-[320px] border-l-2 border-white/20 pl-6 hover:text-[#F05623] transition "
               >
-                <p className="text-[12px] text-white/50 mb-3 uppercase font-semibold tracking-wide">
-                  3 Days Ago
+                <p className="text-[12px] text-white/50 mb-3 uppercase font-semibold tracking-wide hover:text-[#F05623] transition ">
+                 {item.date}
                 </p>
 
                 <h4 className="text-[14px] font-semibold leading-snug hover:text-[#F05623] transition">
-                  {item}
+                  {item.title}
                 </h4>
               </div>
             ))}

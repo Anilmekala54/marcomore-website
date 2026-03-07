@@ -1,7 +1,23 @@
 import React from "react";
 import { ChevronRight } from "lucide-react";
+import tsrtc from "../assets/images/tsrtc.png"
+import turito from "../assets/images/turitobg.png"
 
 function FeaturedWork() {
+  const cards = [
+    {
+      imageBg:tsrtc,
+      type:"WEBSITE",
+      title:"TSRTC",
+      dec:"SEO-led traffic growth for Telangana State Road Transport Corporation by optimizing route-based searches, targeting the “Mahalakshmi Pathakam” scheme, and building structured FAQ-driven content to capture commuter search intent."
+    },
+     {
+       imageBg:turito,
+      type:"WEBSITE",
+      title:"Turito",
+      dec:"Scaled organic traffic through strategic keyword targeting across high-difficulty academic subjects, supported by structured content clusters and solution-driven pages for student search queries."
+    },
+  ]
   return (
     <section className="bg-[#FFF9F6] text-black py-16 lg:py-20">
 
@@ -33,15 +49,27 @@ function FeaturedWork() {
 
             <div className="lg:flex lg:flex-col flex sm:flex-row lg:flex-col gap-4">
 
-              <button className="h-[42px] w-full sm:w-[212px]   rounded-full text-[10px] lg:text-xs font-semibold bg-gradient-to-r from-[#EE5125] to-[#E51F31] text-white flex items-center justify-center gap-2 hover:scale-105 transition">
-                REQUEST A PROPOSAL
-                <ChevronRight size={16} />
-              </button>
+             <button
+  className="group h-[42px] w-full sm:w-[212px] rounded-full text-[10px] lg:text-xs font-semibold bg-gradient-to-r from-[#EE5125] to-[#E51F31] text-white flex items-center justify-center gap-2 "
+>
+  <span className="relative">
+    REQUEST A PROPOSAL
+    <span className="absolute left-0 -bottom-1 h-[1px] w-0 bg-white transition-all duration-300 group-hover:w-full"></span>
+  </span>
 
-              <button className="h-[42px] w-full sm:w-[150px] text-[10px] lg:text-xs rounded-full text-xs font-semibold border border-black/50 flex items-center justify-center gap-2 uppercase hover:bg-black hover:text-white transition">
-                CONTACT US
-                <ChevronRight size={16} />
-              </button>
+  <ChevronRight size={16} />
+</button>
+
+             <button
+  className="group h-[42px] w-full sm:w-[150px] text-[10px] lg:text-xs rounded-full font-semibold border border-black/50 flex items-center justify-center gap-2 uppercase transition-all duration-300"
+>
+  <span className="relative">
+    CONTACT US
+    <span className="absolute left-0 -bottom-1 h-[1px] w-0 bg-black transition-all duration-300 group-hover:w-full"></span>
+  </span>
+
+  <ChevronRight size={16} />
+</button>
 
             </div>
           </div>
@@ -49,7 +77,7 @@ function FeaturedWork() {
     
           <div className="flex flex-col gap-4 lg:gap-8 xl:gap-14 w-full">
 
-            {[1,2,3,4,5,6,7,8].map((_, index) => (
+            {cards.map((item, index) => (
               <div
                 key={index}
                 className="
@@ -59,30 +87,35 @@ function FeaturedWork() {
                   sm:h-[360px]
                   md:h-[420px]
                   lg:h-[480px]
-                  bg-[#A9A9A9]
+                 
                   text-white
                   rounded-[10px]
                   relative
                   overflow-hidden
+                  
+                  
+                  bg-cover
+                  bg-center
+                
+                  bg-black/70
                 "
-              >
+              style={{backgroundImage: `url('${item.imageBg}')`}}>
 
-                {/* Overlay Content */}
+               <div className="absolute inset-0 bg-gradient-to-b from-[#00000000] to-[#000000]"></div>
                 <div className="absolute bottom-0 w-full p-6 sm:p-8 lg:p-[34px] flex flex-col gap-5">
 
                   <button className="uppercase font-semibold text-xs px-3 py-1.5 bg-white/10 border border-white/20 rounded-full w-fit">
-                    Website
+                    {item.type}
                   </button>
 
                   <h2 className="font-semibold text-xl sm:text-2xl lg:text-[34px] leading-tight">
-                    Safeway <br />
-                    (Albertsons)
+                   {item.title}
                   </h2>
 
                   <div className="flex flex-col sm:flex-row sm:justify-between sm:items-end gap-4">
 
-                    <p className="font-medium text-sm sm:text-base leading-relaxed sm:max-w-[60%] lg:block hidden">
-                      Website Redesign & B2B Customer Experience for a National Grocery Brand
+                    <p className="font-medium text-sm sm:text-base leading-relaxed sm:max-w-[70%] lg:block hidden">
+                     {item.dec}
                     </p>
 
                     <button className="h-[42px] px-6 rounded-full text-xs font-semibold bg-white text-black flex items-center gap-2 hover:scale-105 transition w-fit">

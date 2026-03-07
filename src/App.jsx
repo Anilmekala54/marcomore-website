@@ -10,6 +10,7 @@ import FrequentlyAskedQuestion from "./pages/FrequentlyAskedQuestion";
 import RequestProposal from "./pages/RequestProposal";
 import Careers from "./pages/Careers";
 import JobDetails from "./pages/JobDetails";
+import Work from "./pages/Work";
 
 function App() {
   return (
@@ -20,11 +21,12 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/services" element={<Services />} />
         <Route path="/contact" element={<Contact />} />
-        <Route path="/resources" element={<Resources />} />
+        <Route path="/franchising" element={<Resources />} />
         <Route path="/frequentlyAskedQuestion" element={<FrequentlyAskedQuestion/>} />
         <Route path="/requestproposal" element={<RequestProposal/>} />
         <Route path="/career" element={<Careers/>} />
         <Route path="/careers/:slug" element={<JobDetails />} />
+        <Route path="/work" element={<Work />} />
       </Routes>
     </SmoothScroll>
   );

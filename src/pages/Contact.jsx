@@ -7,7 +7,7 @@ import FooterSection from '../components/FooterSection';
 
 function Contact() {
   return (
-    <div className='bg-black text-white'>
+    <div className='bg-white'>
     <YourVision/>
     <ContactUs/>
     <Location1/>

@@ -6,11 +6,12 @@ import review from "../assets/images/review.svg";
 import quo from "../assets/images/quots.svg";
 import emoji from "../assets/images/emoji.svg";
 import star1 from "../assets/images/star1.svg";
+import star2 from "../assets/images/star2.svg";
 import { MoveUpRight } from "lucide-react";
 
 function Testimonials() {
   return (
-    <section className="bg-[#FFF9F6] text-black  py-10 lg:py-20">
+    <section className="bg-[#FFF9F6] text-black  py-10 ">
       <div className="max-w-[1320px] mx-auto px-6 lg:px-10">
         <div className="flex flex-col lg:flex-row justify-between items-start gap-10 mb-16">
           <div className="space-y-4 flex flex-col gap-6">
@@ -52,24 +53,43 @@ function Testimonials() {
                           flex flex-col justify-between shadow-[0_8px_6px_-6px_rgba(0,0,0,0.3)] bg-white p-6"
           >
             <div>
-              <h3 className="text-xl lg:text-[24px] font-semibold leading-snug mb-6 text-black">
+              <h3 className="text-xl lg:text-[24px] font-semibold leading-snug mb-6 text-black hidden">
                 Communication was very simple and easy with Marcamor.
               </h3>
 
               <img src={quo} alt="Quotes" className="h-8 w-8 mb-6" />
 
               <p className="text-base lg:text-[18px] leading-relaxed text-black">
-                Marcamor was able to successfully produce a requirement-accurate
-                website and even deliver an animated logo as a sign of good
-                gesture. The team was highly responsive, and internal
-                stakeholders were particularly impressed with their deep
-                knowledge of Website development.
+                Marcamor is the best digital marketing agency in India! They
+                truly know how to grow brands with their creative and
+                data-driven strategies. The team is professional, friendly, and
+                always goes the extra mile to deliver great results. Our sales
+                and customer engagement have improved a lot since working with
+                them. I highly recommend Marcamor for any business looking to
+                succeed online!
               </p>
             </div>
 
             <div className="mt-8">
-              <p className="font-semibold text-[16px] text-black">Jim Willis</p>
-              <p className="text-sm text-black/50">CEO, KINSHASA LIFESTYLE</p>
+              <p className="font-semibold text-[18px] text-black">
+                360 P Kirthi Tejesh Reddy
+              </p>
+                <div className="flex flex-col mt-2">
+                  <div className="flex items-center gap-2">
+                    <div className="flex items-center gap-1">
+                      {[...Array(5)].map((_, index) => (
+                        <img
+                          key={index}
+                          src={star2}
+                          alt="star"
+                          className="w-[15px] h-[15px]"
+                        />
+                      ))}
+                    </div>
+
+                    <span className="text-sm font-semibold text-black">5</span>
+                  </div>
+                </div>
             </div>
           </div>
 
@@ -82,113 +102,174 @@ function Testimonials() {
                             flex flex-col justify-between shadow-[0_8px_6px_-6px_rgba(0,0,0,0.3)] bg-white p-6"
             >
               <div>
-                <h3 className="text-[16px] font-semibold mb-4 text-black">
+                <h3 className="text-[16px] font-semibold mb-4 text-black hidden">
                   Communication was very simple and easy with Marcamor.
                 </h3>
 
                 <img src={quo} alt="Quotes" className="h-6 w-6 mb-4" />
 
-                <p className="text-sm leading-relaxed text-black">
-                  Marcamor was able to successfully produce a
-                  requirement-accurate website and even deliver an animated logo
-                  as a sign of good gesture.
+                <p className="text-sm leading-relaxed text-black text-[12px]">
+                  We saw real, measurable results within few days. Marcamor is
+                  one of the few digital marketing companies in Hyderabad that
+                  actually delivers great result for the client services.
                 </p>
               </div>
 
               <div className="mt-6">
-                <p className="font-semibold text-sm text-black">Jim Willis</p>
-                <p className="text-xs text-black/50">CEO, KINSHASA LIFESTYLE</p>
+                <p className="font-semibold text-[14px] text-black">Veeru</p>
+                <div className="flex flex-col mt-2">
+                  <div className="flex items-center gap-2">
+                    <div className="flex items-center gap-1">
+                      {[...Array(5)].map((_, index) => (
+                        <img
+                          key={index}
+                          src={star2}
+                          alt="star"
+                          className="w-[15px] h-[15px]"
+                        />
+                      ))}
+                    </div>
+
+                    <span className="text-sm font-semibold text-black">5</span>
+                  </div>
+                </div>
               </div>
             </div>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-              {[1, 2].map((_, index) => (
-                <div
-                  key={index}
-                  className="bg-white rounded-[12px] shadow-sm
+              <div
+                className="bg-white rounded-[12px] shadow-sm
                              w-full xl:w-[263px]
                              xl:h-[263px]
                              p-6
                              flex flex-col justify-between shadow-[0_8px_6px_-6px_rgba(0,0,0,0.3)] bg-white p-6"
-                >
-                  <div>
-                    <img src={quo} alt="Quotes" className="h-5 w-5 mb-4" />
-                    <p className="text-sm leading-relaxed text-black">
-                      Lorem Ipsum is simply dummy text of the printing and
-                      typesetting industry.
-                    </p>
-                  </div>
+              >
+                <div>
+                  <img src={quo} alt="Quotes" className="h-5 w-5 mb-4" />
+                  <p className="text-[12px] leading-relaxed text-[#00000080] ">
+                    Their SEO and ad strategies worked wonders for our local
+                    business. Marcamor really is among the top digital
+                    marketing companies in Hyderabad
+                  </p>
+                </div>
 
-                  <div className="mt-6">
-                    <p className="font-semibold text-sm text-black">
-                      Jim Willis
-                    </p>
-                    <p className="text-xs text-black/50">
-                      CEO, KINSHASA LIFESTYLE
+                <div className="mt-6">
+                  <p className="font-semibold text-sm text-black">Sai Dinesh</p>
+                  <div className="flex flex-col mt-2">
+                    <div className="flex items-center gap-2">
+                      <div className="flex items-center gap-1">
+                        {[...Array(5)].map((_, index) => (
+                          <img
+                            key={index}
+                            src={star2}
+                            alt="star"
+                            className="w-[15px] h-[15px]"
+                          />
+                        ))}
+                      </div>
+
+                      <span className="text-sm font-semibold text-black">
+                        5
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                className="bg-white rounded-[12px] shadow-sm
+                             w-full xl:w-[263px]
+                             xl:h-[263px]
+                             p-6
+                             flex flex-col justify-between shadow-[0_8px_6px_-6px_rgba(0,0,0,0.3)] bg-white p-6"
+              >
+                <div>
+                  <img src={quo} alt="Quotes" className="h-5 w-5 mb-4" />
+                  <p className="text-[12px] leading-relaxed text-[#00000080]">
+                    Marcamor has been a game-changer for our online presence in
+                    Hyderabad; their digital marketing expertise has helped us
+                    reach new heights.{" "}
+                  </p>
+                </div>
+
+                <div className="mt-6">
+                  <p className="font-semibold text-sm text-black">
+                    GNVSL.PAVANA BASAVYA
+                  </p>
+                  <div className="flex flex-col mt-2">
+                  <div className="flex items-center gap-2">
+                    <div className="flex items-center gap-1">
+                      {[...Array(5)].map((_, index) => (
+                        <img
+                          key={index}
+                          src={star2}
+                          alt="star"
+                          className="w-[15px] h-[15px]"
+                        />
+                      ))}
+                    </div>
+
+                    <span className="text-sm font-semibold text-black">5</span>
+                  </div>
+                </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="px-6 lg:px-16 py-6">
+          <div className="">
+            <div className="max-w-7xl mx-auto flex flex-col gap-6 lg:flex-row lg:items-center lg:justify-between">
+              
+              <p className="text-[14px] font-medium text-black">
+                1500 Satisfied Clients Love Our Services
+              </p>
+
+              <div className="flex items-center justify-between lg:flex-1 lg:ml-10">
+                <div className="flex items-center gap-4">
+                  <img src={emoji} alt="emoji" className="w-8 h-8" />
+
+                  <div className="flex flex-col">
+                    <div className="flex items-center gap-2">
+                      <div className="flex items-center gap-1">
+                        {[...Array(5)].map((_, index) => (
+                          <img
+                            key={index}
+                            src={star1}
+                            alt="star"
+                            className="w-[15px] h-[15px]"
+                          />
+                        ))}
+                      </div>
+
+                      <span className="text-sm font-semibold text-black">
+                        4.9
+                      </span>
+                    </div>
+
+                    <p className="lg:text-[14px] text-[12px]  font-medium text-black">
+                      Based On 1.5k Reviews
                     </p>
                   </div>
                 </div>
-              ))}
+
+               
+               <button
+  className="group flex items-center gap-2 text-[10px] lg:text-[14px] font-medium bg-white lg:px-3 lg:py-2 rounded-full"
+>
+  <span className="relative">
+    View All Reviews
+    <span className="absolute left-0 -bottom-1 h-[1px] w-0 bg-black transition-all duration-300 group-hover:w-full"></span>
+  </span>
+
+  <span className="w-6 h-6 flex items-center justify-center rounded-full border border-black/30">
+    <MoveUpRight className="w-4 h-4" />
+  </span>
+</button>
+              </div>
             </div>
           </div>
         </div>
-
-<div className="px-6 lg:px-16 py-6">
- <div className="">
-  <div className="max-w-7xl mx-auto flex flex-col gap-6 lg:flex-row lg:items-center lg:justify-between">
-
-    {/* LEFT TEXT */}
-    <p className="text-[14px] font-medium text-black">
-      1500 Satisfied Clients Love Our Services
-    </p>
-
-    {/* MOBILE ROW + DESKTOP RIGHT SIDE */}
-    <div className="flex items-center justify-between lg:flex-1 lg:ml-10">
-
-      {/* EMOJI + RATING */}
-      <div className="flex items-center gap-4">
-        <img
-          src={emoji}
-          alt="emoji"
-          className="w-8 h-8"
-        />
-
-        <div className="flex flex-col">
-          <div className="flex items-center gap-2">
-            <div className="flex items-center gap-1">
-              {[...Array(5)].map((_, index) => (
-                <img
-                  key={index}
-                  src={star1}
-                  alt="star"
-                  className="w-[15px] h-[15px]"
-                />
-              ))}
-            </div>
-
-            <span className="text-sm font-semibold text-black">
-              4.9
-            </span>
-          </div>
-
-          <p className="lg:text-[14px] text-[12px]  font-medium text-black">
-            Based On 1.5k Reviews
-          </p>
-        </div>
-      </div>
-
-      {/* BUTTON */}
-      <button className="flex items-center gap-2 text-[10px] lg:text-[14px] font-medium bg-white  lg:px-3 lg:py-2 rounded-full hover:shadow-md transition duration-300">
-        View All Reviews
-        <span className="w-6 h-6 flex items-center justify-center rounded-full border border-black/30">
-          <MoveUpRight className="w-4 h-4" />
-        </span>
-      </button>
-
-    </div>
-  </div>
-</div>
-</div>
       </div>
     </section>
   );

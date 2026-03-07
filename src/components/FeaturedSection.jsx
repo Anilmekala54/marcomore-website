@@ -1,80 +1,103 @@
 import React from "react";
 import { Clock3, CalendarDays } from "lucide-react";
+import insights5 from "../assets/images/insights5.svg";
+import insights6 from "../assets/images/insights6.svg";
+import insights7 from "../assets/images/insights7.svg";
+import insights8 from "../assets/images/insights8.svg";
 
 const posts = [
   {
-    category: "ENTERTAINMENT",
-    title: "Top 10 Richest Comedians in the World (2025 Edition)",
+    image: insights5,
+    title: "Why Branding Is a Long Term Business Asset",
+    type: "Branding",
+    date: "Mar 07, 2025",
+    time: "15 min",
   },
   {
-    category: "BUSINESS",
-    title: "How to Advertise on Google in 2025: Step-by-Step Guide",
+    image: insights6,
+    title: "Understanding the Difference Between Traffic and Revenue Growth",
+    type: "Marketing",
+    date: "Mar 07, 2025",
+    time: "20 min",
   },
   {
-    category: "ENTERTAINMENT",
-    title:
-      "Setting Sail on the Most Expensive Cruises in the World (2025 Edition)",
+    image: insights7,
+    title: "How Digital Infrastructure Impacts Business Scalability",
+    type: "Business",
+    date: "Mar 07, 2025",
+    time: "30 min",
   },
   {
-    category: "TECH",
-    title:
-      "Best Project Management Tools in 2025: Export Reviews and Comparisons",
+    image: insights8,
+    title: "Why Businesses Are Rebuilding Their Digital Platforms",
+    type: "Technology",
+    date: "Mar 07, 2025",
+    time: "40 min",
   },
 ];
 
 function InsightsSection() {
   return (
     <section className="bg-black text-white py-[60px]">
-
-      {/* Global Container */}
       <div className="max-w-[1440px] mx-auto w-[90%]">
 
-        {/* Grid */}
-        <div className="grid gap-10
-                        grid-cols-1
-                        sm:grid-cols-2
-                        xl:grid-cols-4">
-
+        <div
+          className="
+          grid gap-6
+          grid-cols-1
+          sm:grid-cols-2
+          xl:grid-cols-4
+        "
+        >
           {posts.map((post, index) => (
             <article
               key={index}
               className="group space-y-5 cursor-pointer"
             >
 
-              {/* Image Placeholder */}
-              <div className="w-full aspect-[16/10] bg-white rounded-xl overflow-hidden">
-                {/* Later replace with real image */}
+              {/* Image */}
+              <div className="w-full aspect-[16/10] rounded-xl overflow-hidden">
+                <img
+                  src={post.image}
+                  alt={post.title}
+                  className="w-full h-full object-cover"
+                />
               </div>
 
-              {/* Meta Row */}
-              <div className="flex items-center flex-wrap gap-3 text-[11px]">
+              {/* Meta */}
+              <div className="flex items-center flex-wrap gap-2 text-[10px]">
 
-                <span className="bg-white/10 text-[10px] px-3 py-1 rounded-full uppercase tracking-wide">
-                  {post.category}
+                <span className="bg-white/10 px-3 py-1 rounded-full uppercase tracking-wide">
+                  {post.type}
                 </span>
 
-                <span className="flex items-center text-[10px] gap-1 bg-white/10 px-3 py-1 rounded-full">
+                <span className="flex items-center gap-1 bg-white/10 px-3 py-1 rounded-full uppercase">
                   <Clock3 size={12} />
-                  4 MIN
+                  {post.time}
                 </span>
 
-                <span className="flex items-center text-[10px] gap-1 bg-white/10 px-3 py-1 rounded-full">
+                <span className="flex items-center gap-1 bg-white/10 px-3 py-1 rounded-full uppercase">
                   <CalendarDays size={12} />
-                  JUN 12, 2025
+                  {post.date}
                 </span>
 
               </div>
 
               {/* Title */}
-              <h3 className="text-[14px] font-medium leading-snug 
-                             transition-colors 
-                             group-hover:text-[#F05623]">
+              <h3
+                className="
+                text-[14px]
+                font-medium
+                leading-snug
+                transition-colors
+                group-hover:text-[#F05623]
+              "
+              >
                 {post.title}
               </h3>
 
             </article>
           ))}
-
         </div>
 
       </div>

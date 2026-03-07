@@ -29,12 +29,12 @@ function Navbar() {
     >
       <div className="max-w-[90%] mx-auto w-full h-full flex items-center justify-between">
 
-        {/* Logo */}
+       
         <img src={logo} alt="marcamore logo" className="h-12 w-auto" />
 
         
         <div className="hidden xl:flex items-center gap-10">
-          <div className="flex items-center gap-12 text-[16px] font-medium text-white">
+          <div className="flex items-center gap-10 text-[16px] font-medium text-white">
 
             <NavLink
               to="/"
@@ -49,20 +49,37 @@ function Navbar() {
 
             <ServicesMegaMenu />
 
-            <NavLink to="/about" className="hover:text-gray-300 transition font-semibold">
+            <NavLink to="/about" 
+              className={({ isActive }) =>
+                isActive
+                  ? "px-5 py-2 bg-white/10 rounded-full font-semibold"
+                  : "hover:text-gray-300 transition font-semibold"
+              }>
               About Us
             </NavLink>
 
-            <NavLink to="/work" className="hover:text-gray-300 transition font-semibold">
+            <NavLink to="/work"  className={({ isActive }) =>
+                isActive
+                  ? "px-5 py-2 bg-white/10 rounded-full font-semibold"
+                  : "hover:text-gray-300 transition font-semibold"
+              }>
               Work
             </NavLink>
 
-            <NavLink to="/contact" className="hover:text-gray-300 transition font-semibold">
+            <NavLink to="/contact"  className={({ isActive }) =>
+                isActive
+                  ? "px-5 py-2 bg-white/10 rounded-full font-semibold"
+                  : "hover:text-gray-300 transition font-semibold"
+              }>
               Contact
             </NavLink>
 
-            <NavLink to="/resources" className="hover:text-gray-300 transition font-semibold">
-              Resources
+            <NavLink to="/franchising"  className={({ isActive }) =>
+                isActive
+                  ? "px-5 py-2 bg-white/10 rounded-full font-semibold"
+                  : "hover:text-gray-300 transition font-semibold"
+              }>
+              Franchising
             </NavLink>
             
           </div>
@@ -121,8 +138,8 @@ function Navbar() {
             Contact
           </NavLink>
 
-          <NavLink to="/resources" onClick={() => setOpen(false)}>
-            Resources
+          <NavLink to="/franchising" onClick={() => setOpen(false)}>
+            Franchising
           </NavLink>
 
         <NavLink to='/requestproposal' onClick={() => setOpen(false)}>

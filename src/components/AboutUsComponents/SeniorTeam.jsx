@@ -1,41 +1,40 @@
 import React, { useEffect, useRef, useState } from "react";
-import member1 from "../../assets/images/member2.svg";
-import member2 from "../../assets/images/member3.svg";
+import member1 from "../../assets/images/member1.svg";
+import member2 from "../../assets/images/member2.svg";
 import member3 from "../../assets/images/member3.svg";
-import member4 from "../../assets/images/member3.svg";
-import member5 from "../../assets/images/member3.svg";
+import member4 from "../../assets/images/member4.svg";
+
 
 const teamMembers = [
   {
     img: member1,
     name: "Sandeep Tekkali",
-    role: "CEO",
+    role: "Founder & CEO",
+    subdec:"IIFT Delhi, NIT Warangal,",
     desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
   },
   {
     img: member2,
-    name: "Marcus Williams",
-    role: "Head of Product Design",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+    name: "Kuldeep Singh",
+    role: "Co-Founder",
+    subdec:"IIM Bangalore, IIT Dhanbad,",
+    desc: "8+ years Experience in Performance Marketing & Digital Strategy.",
   },
   {
     img: member3,
-    name: "Priya Sharma",
-    role: "Operations Director",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+    name: "Jyothsna Parne",
+    role: "COO",
+    subdec:"IIM Bangalore, IIT Dhanbad,",
+    desc: "16 years of experience in IT industry.",
   },
   {
     img: member4,
-    name: "James Okonkwo",
-    role: "Chief Technology Officer",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+    name: "Kiran Maturi",
+    role: "CTO",
+     subdec:"NIT Warangal,",
+    desc: "15+ years experience in Building tech products.",
   },
-  {
-    img: member5,
-    name: "Sofia Reyes",
-    role: "Creative Strategy Lead",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-  },
+  
 ];
 
 const cards = [
@@ -197,15 +196,27 @@ function SeniorTeam() {
                   />
 
                   <div className="absolute bottom-0 left-0 right-0 m-4 p-4 bg-black/50 backdrop-blur-[16px] border-2 border-white text-white">
-                    <h3 className="text-[18px] font-semibold leading-snug">
+                    <h3 className="text-[18px] font-bold leading-snug">
                       {member.name}
                     </h3>
-                    <p className="text-[14px] mt-1">{member.role}</p>
-                    <div className="overflow-hidden max-h-0 opacity-0 mb-0 group-hover:max-h-[200px] group-hover:opacity-100 group-hover:mb-3 transition-all duration-500 ease-out">
-                      <p className="text-[13px] leading-relaxed">
-                        {member.desc}
-                      </p>
-                    </div>
+                    <p className="text-[14px] font-semibold mt-1">{member.role}</p>
+
+                   <div className="
+  max-h-[200px] opacity-100 mb-3
+  lg:max-h-0 lg:opacity-0 lg:mb-0
+  lg:group-hover:max-h-[200px]
+  lg:group-hover:opacity-100
+  lg:group-hover:mb-3
+  transition-all duration-500 ease-out
+">
+  <p className="text-[14px] leading-relaxed my-1">
+    {member.subdec}
+  </p>
+
+  <p className="text-[14px] leading-relaxed">
+    {member.desc}
+  </p>
+</div>
 
                   
                   </div>
@@ -215,20 +226,20 @@ function SeniorTeam() {
           </div>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-6 hidden">
           {cards.map((card, index) => (
             <div
               key={index}
               className="flex flex-col p-6 bg-[#0000000D] gap-4 rounded-[10px]"
             >
               <div className="flex justify-between items-start">
-                <h3 className="text-[16px] font-semibold">{card.name}</h3>
-                <span className="text-[14px] text-black/50 font-semibold">
+                <h3 className=" lg:text-[16px] text-[14px]  font-semibold">{card.name}</h3>
+                <span className="lg:text-[14px] text-[12px] text-black/50 font-semibold">
                   {card.role}
                 </span>
               </div>
-              <div className="border-t border-black/10" />
-              <p className="text-[14px] text-black/60 leading-relaxed">
+              <div className="border-t border-[#00000026]" />
+              <p className="lg:text-[14px] text-[12px] text-black/60 leading-relaxed">
                 {card.desc}
               </p>
             </div>

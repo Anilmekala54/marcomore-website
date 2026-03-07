@@ -7,73 +7,34 @@ function IndustryCard({ item, isOpen, onClick }) {
       className="
         bg-[#0000000D]
         w-full
-        lg:w-[420px]
         text-black
-        rounded-[10px]
-        p-6
-        sm:p-[24px]
+        rounded-[12px]
+        p-5
+        sm:p-6
         border border-black/5
-        transition-all duration-300
-       
        
       "
     >
-
       
       <div
         onClick={onClick}
-        className="flex justify-between items-start cursor-pointer"
+        className="flex justify-between items-start gap-4 cursor-pointer"
       >
-        <div className="flex flex-col gap-[6px] gap-3 ">
-
-          <h3 className="font-semibold text-[15px] sm:text-[16px] border-l-2 pl-2 border-[#00000026]">
+        <div className="flex flex-col gap-3">
+          <h3 className="font-semibold text-[14px] sm:text-[15px] md:text-[16px] border-l-2 pl-3 border-black/20">
             {item.title}
           </h3>
 
-          <p className="text-[13px] sm:text-[14px] text-black/60">
+          <p className="text-[12px] sm:text-[13px] md:text-[14px] text-black/60">
             {item.desc}
           </p>
-
         </div>
 
-        <ChevronDown
-          size={18}
-          className={`transition-transform duration-300 ${
-            isOpen ? "rotate-180" : ""
-          }`}
-        />
+      
       </div>
 
-      {/* Expandable Content */}
-      <div
-        className={`
-          overflow-hidden
-          transition-all
-          duration-500
-          ${isOpen ? "max-h-[300px] mt-4 opacity-100" : "max-h-0 opacity-0"}
-        `}
-      >
-        <p className="text-[13px] sm:text-[14px] text-black/70 mb-4 leading-relaxed">
-          {item.content}
-        </p>
-
-        <div
-          className="
-            flex items-center justify-center gap-2
-            w-full sm:w-[140px]
-            h-[37px]
-            rounded-full
-            bg-gradient-to-r from-[#E51F31] to-[#EE5125]
-            text-white font-semibold text-sm
-            cursor-pointer
-            hover:scale-105
-            transition-all duration-300
-          "
-        >
-          <span>Learn More</span>
-          <MoveRight size={16} />
-        </div>
-      </div>
+      
+      
     </div>
   );
 }

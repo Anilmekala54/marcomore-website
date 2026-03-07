@@ -4,93 +4,78 @@ import IndustryCard from "./IndustryCard";
 const industriesData = [
   {
     title: "Not-For-Profit",
-    desc: "All NFPs receive 10% discount as a token of our support",
-    content:
-      "We help non-profits build impactful digital experiences that increase donations and engagement.",
+    desc: "Strategic communication and digital systems designed to amplify impact, donor engagement, and operational transparency.",
+   
   },
   {
     title: "Real Estate & Construction",
-    desc: "Pioneers in real estate web design and marketing",
-    content:
-      "We create high-converting websites for real estate brands with strong UX and lead generation.",
+    desc: "High-conversion digital platforms and targeted acquisition strategies built for project visibility and lead generation at scale.",
+    
   },
   {
     title: "B2B",
-    desc: "Custom web design & branding for B2B",
-    content:
-      "Professional branding and scalable web systems tailored for B2B companies.",
+    desc: "Structured brand positioning and performance-driven digital infrastructure tailored for complex sales cycles and enterprise growth.",
+   
   },
   {
     title: "E-Commerce",
-    desc: "Custom web design & branding for E-Commerce",
-    content:
-      "We build high-converting e-commerce websites with seamless user experiences.",
+    desc: "End-to-end growth ecosystems combining performance marketing, conversion optimization, and scalable digital platforms.",
+   
   },
   {
     title: "Education",
-    desc: "Custom web design & branding for Education",
-    content:
-      "We create high-converting websites for educational institutions with strong UX and lead generation.",
+    desc: "Search-driven visibility and structured enrollment funnels designed to accelerate institutional growth.",
+  
   },
   {
     title: "Technology",
-    desc: "Custom web design & branding for Technology",
-    content:
-      "Professional branding and scalable web systems tailored for technology companies.",
+    desc: "Product-focused branding and demand-generation systems built to support innovation and market expansion.",
+    
   },
   {
     title: "Business-to-Consumer",
-    desc: "Custom web design & branding for Business-to-Consumer",
-    content:
-      "We build high-converting websites for B2C brands with strong UX and lead generation.",
+    desc: "Audience-centric growth strategies focused on engagement, retention, and scalable revenue acquisition.",
+
   },
   {
-    title: "Real Health & Wellness & Construction",
-    desc: "Custom web design & branding for Real Health & Wellness & Construction",
-    content:
-      "We create high-converting websites for health, wellness, and construction brands.",
+    title: "Health & Wellness",
+    desc: "Trust-led branding and digital performance frameworks designed to drive credibility and sustainable customer growth.",
+  
   },
   {
     title: "Law",
-    desc: "Custom web design & branding for Law",
-    content:
-      "Professional branding and scalable web systems tailored for law firms.",
+    desc: "Authority-driven digital positioning and structured lead systems built on trust, compliance, and credibility.",
+    
   },
   {
     title: "Food & Beverages",
-    desc: "Custom web design & branding for Food & Beverages",
-    content:
-      "We build high-converting websites for food and beverage brands.",
+    desc: "Brand-led growth systems combining packaging identity, digital marketing, and retail visibility.",
+ 
   },
   {
     title: "Professional Services",
-    desc: "Custom web design & branding for Professional Services",
-    content:
-      "We build high-converting websites for professional services brands.",
+    desc: "Strategic positioning and performance marketing frameworks that elevate expertise into measurable growth.",
+   
   },
   {
     title: "Entertainment & Media",
-    desc: "Custom web design & branding for Entertainment & Media",
-    content:
-      "We build high-converting websites for entertainment and media brands.",
+    desc: "High-impact branding and digital engagement strategies engineered for audience scale and visibility.",
+    
   },
   {
-    title: "StartUps",
-    desc: "Custom web design & branding for StartUps",
-    content:
-      "We help startups launch scalable, growth-focused digital platforms.",
+    title: "Startups",
+    desc: "Structured go-to-market systems, MVP development, and scalable acquisition frameworks built for rapid growth.",
+   
   },
   {
     title: "Sports & Fitness",
-    desc: "Custom web design & branding for Sports & Fitness",
-    content:
-      "We build high-converting websites for sports and fitness brands.",
+    desc: "Community-driven brand ecosystems and performance campaigns designed to increase engagement and memberships.",
+  
   },
   {
     title: "Travel & Hospitality",
-    desc: "Custom web design & branding for Travel & Hospitality",
-    content:
-      "We build high-converting websites for travel and hospitality brands.",
+    desc: "Experience-focused branding and digital acquisition strategies built to drive bookings and long-term brand loyalty.",
+ 
   },
 ];
 
@@ -103,19 +88,15 @@ function IndustriesCards() {
 
   return (
     <section className="bg-[#FFF9F6] ">
-
-     
-      <div className="max-w-[90%] mx-auto w-full pb-20 ">
-
+      <div className="max-w-[1440px] w-[90%] mx-auto pb-10 lg:pb-20">
         <div
           className="
             grid
-            gap-4
-            lg:gap-6
             grid-cols-1
             sm:grid-cols-2
+            lg:grid-cols-2
             xl:grid-cols-3
-           
+            gap-4
           "
         >
           {industriesData.map((item, index) => (
@@ -127,7 +108,6 @@ function IndustriesCards() {
             />
           ))}
         </div>
-
       </div>
     </section>
   );

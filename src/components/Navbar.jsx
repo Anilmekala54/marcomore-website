@@ -126,6 +126,8 @@ function Navbar() {
             Home
           </NavLink>
 
+
+           
           <NavLink to="/about" onClick={() => setOpen(false)}>
             About Us
           </NavLink>

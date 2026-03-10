@@ -239,11 +239,7 @@ function Services() {
           </div>
         </div>
 
-        {/* second row */}
-
-       
-
-        {/* last card */}
+      
 
         <div>
           <div className="flex flex-col gap-6 mt-4">

@@ -3,6 +3,7 @@ import { ChevronRight } from "lucide-react";
 import tsrtc from "../../assets/images/tsrtc.png";
 import turito from "../../assets/images/turitobg.png";
 import vedantu from "../../assets/images/vedantubg.svg";
+import earth from "../../assets/images/earth.svg";
 import upgradbg from "../../assets/images/upgradbg.svg";
 import sparkelbg from "../../assets/images/sparkelbg.svg";
 
@@ -29,7 +30,7 @@ const caseStudies = [
     deliverables: ["Performance Marketing", "Performance Marketing"],
     industry: "beauty",
     liveLink: "https://example3.com",
-    image: vedantu,
+    image: earth,
   },
   {
     title: "Vedantu",
@@ -79,14 +80,16 @@ function CaseStudies() {
             </button>
           </div>
 
-          <div className="flex gap-3 overflow-x-auto pb-2">
+          <div className="flex gap-3 overflow-x-auto pb-2 scroll-smooth snap-x snap-mandatory no-scrollbar">
             {[
               "All",
-              "UI/UX",
-              "Web Design",
-              "Branding",
-              "SEO",
-              "Consultation & Audit",
+              "Digital Marketing",
+              "Branding and Design",
+              "Business Consulting",
+              "Website and App Development",
+              "Technology and Product Development",
+              "Performance and Analytics",
+              "Market Research and Consumer Insights",
             ].map((tag, index) => (
               <button
                 key={index}
@@ -102,7 +105,7 @@ function CaseStudies() {
           </div>
         </div>
 
-        {/* Case Studies */}
+     
         {caseStudies.map((item, index) => (
           <div
             key={index}

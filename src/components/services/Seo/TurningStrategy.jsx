@@ -1,0 +1,52 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+import React from "react";
+
+function TurningStrategy() {
+  return (
+    <section className="bg-[#fff9f6] py-10 lg:py-16">
+
+      <div className="max-w-[1440px] mx-auto w-[90%]">
+
+        <div className="flex flex-col gap-6">
+
+         
+          <h2 className="text-[32px] max-w-[950px]  md:text-[44px] lg:text-[52px] font-semibold leading-tight">
+            Drive Visibility. Attract Customers. <br></br> Grow Organically.
+          </h2>
+
+          
+          <p className="text-[15px] text-black leading-relaxed">
+           In a digital-first world, ranking high on search engines is no longer optional — it’s essential. At Marcamor, we combine strategic SEO practices with creative content to boost your visibility and help your brand stand out in a crowded market.
+          </p>
+
+         
+          <p className="text-[15px] text-black leading-relaxed">
+        With over 8 years of experience and proven success across 100+ brands, we focus on sustainable growth, not quick fixes. Our approach is built on data, insights, and the latest SEO trends to ensure long-term results that drive traffic and conversions.
+          </p>
+
+         
+
+        </div>
+
+      </div>
+
+    </section>
+  );
+}
+
+export default TurningStrategy;
+
+
+

@@ -64,3 +64,46 @@ html, body {
 .delay-2 { animation-delay: 1.1s; }
 .delay-3 { animation-delay: 1.3s; }
 .delay-4 { animation-delay: 1.5s; }
+
+
+@keyframes marqueeScroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.marquee-container {
+  width: 100%;
+  overflow: hidden;
+}
+
+.marquee-track {
+  display: flex;
+  width: max-content;
+  animation: marqueeScroll 20s linear infinite;
+}
+
+.marquee-text {
+  font-size: 96px;
+  font-weight: 700;
+  letter-spacing: 10px;
+  white-space: nowrap;
+  color: transparent;
+  -webkit-text-stroke: 1px white;
+}
+
+
+.mask-fade {
+  -webkit-mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+  mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+}
+.outline-text {
+  font-size: 120px;
+  font-weight: 800;
+  letter-spacing: 12px;
+  color: transparent;
+  -webkit-text-stroke: 1px rgba(255,255,255,0.7);
+}

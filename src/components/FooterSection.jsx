@@ -12,8 +12,8 @@ import {
 import logo from "../assets/images/marcamore-logo.svg";
 import insight from "../assets/images/insight-logo.svg";
 import star from "../assets/images/star-logo.svg";
-import footerBg from "../assets/images/Footer.svg";
-import footerMobileBg from "../assets/images/mobileBg1.svg";
+import footerBg from "../assets/images/footerimage.png";
+import footerMobileBg from "../assets/images/footerMobileBg.png";
 import india from "../assets/icons/india.svg";
 import usa from "../assets/icons/usa.svg";
 import uk from "../assets/icons/uk.svg";
@@ -25,7 +25,7 @@ function Footer() {
 
         
       <div
-        className="absolute inset-0 bg-cover  block lg:hidden"
+        className="absolute inset-0 bg-cover backdrop-blur-[20%]  block lg:hidden"
         style={{ backgroundImage: `url(${footerMobileBg})` }}
       />
       <div
@@ -79,14 +79,14 @@ function Footer() {
 
           
           <div className="flex flex-col items-start gap-6 text-center lg:text-left">
-            <p className="font-semibold text-[17px]">
+            <p className="hidden font-semibold text-[17px]">
               Beware of Scammers Posing as Marcamor.
             </p>
 
-          <button className="group bg-gradient-to-r from-[#E51F31] to-[#EE5125] uppercase px-6 py-3 rounded-full text-sm font-medium flex items-center gap-2">
+          <button className="group hidden bg-gradient-to-r from-[#E51F31] to-[#EE5125] uppercase px-6 py-3 rounded-full text-sm font-medium flex items-center gap-2">
   <span className="relative">
     Learn More
-    <span className="absolute left-0 -bottom-1 h-[1px] w-0 bg-white transition-all duration-300 group-hover:w-full"></span>
+    <span className="absolute hidden left-0 -bottom-1 h-[1px] w-0 bg-white transition-all duration-300 group-hover:w-full"></span>
   </span>
   <ChevronRight size={14} />
 </button>
@@ -192,7 +192,7 @@ function Footer() {
               <li><NavLink to="/insights" className="hover:text-[#EE5125]">Insights</NavLink></li>
               <li><NavLink to="/career" className="hover:text-[#EE5125]">Career</NavLink></li>
               <li><NavLink to="/frequentlyAskedQuestion" className="hover:text-[#EE5125]">FAQ</NavLink></li>
-              <li><NavLink to="/privacy-policy" className="hover:text-[#EE5125]">Clientele</NavLink></li>
+              <li><NavLink to="/privacy-policy" className="hover:text-[#EE5125]">Our Clients</NavLink></li>
               <li><NavLink to="/franchising" className="hover:text-[#EE5125]">Franchising</NavLink></li>
             </ul>
           </div>

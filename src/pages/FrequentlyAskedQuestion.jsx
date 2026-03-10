@@ -130,7 +130,7 @@ const faqs = [
 
       <div className="max-w-[1440px] mx-auto w-[90%] py-20">
 
-        {/* Header */}
+        
         <div className="flex flex-col items-center gap-4 mb-16 max-w-[900px] mx-auto">
           <h1 className="text-[60px] font-semibold">FAQs</h1>
           <p className="font-medium text-center">
@@ -141,7 +141,7 @@ const faqs = [
           </p>
         </div>
 
-        {/* FAQ GRID */}
+       
         <div className="grid lg:grid-cols-2 gap-12">
 
           <div className="space-y-6">

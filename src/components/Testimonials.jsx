@@ -74,22 +74,22 @@ function Testimonials() {
               <p className="font-semibold text-[18px] text-black">
                 360 P Kirthi Tejesh Reddy
               </p>
-                <div className="flex flex-col mt-2">
-                  <div className="flex items-center gap-2">
-                    <div className="flex items-center gap-1">
-                      {[...Array(5)].map((_, index) => (
-                        <img
-                          key={index}
-                          src={star2}
-                          alt="star"
-                          className="w-[15px] h-[15px]"
-                        />
-                      ))}
-                    </div>
-
-                    <span className="text-sm font-semibold text-black">5</span>
+              <div className="flex flex-col mt-2">
+                <div className="flex items-center gap-2">
+                  <div className="flex items-center gap-1">
+                    {[...Array(5)].map((_, index) => (
+                      <img
+                        key={index}
+                        src={star2}
+                        alt="star"
+                        className="w-[15px] h-[15px]"
+                      />
+                    ))}
                   </div>
+
+                  <span className="text-sm font-semibold text-black">5</span>
                 </div>
+              </div>
             </div>
           </div>
 
@@ -196,21 +196,23 @@ function Testimonials() {
                     GNVSL.PAVANA BASAVYA
                   </p>
                   <div className="flex flex-col mt-2">
-                  <div className="flex items-center gap-2">
-                    <div className="flex items-center gap-1">
-                      {[...Array(5)].map((_, index) => (
-                        <img
-                          key={index}
-                          src={star2}
-                          alt="star"
-                          className="w-[15px] h-[15px]"
-                        />
-                      ))}
-                    </div>
+                    <div className="flex items-center gap-2">
+                      <div className="flex items-center gap-1">
+                        {[...Array(5)].map((_, index) => (
+                          <img
+                            key={index}
+                            src={star2}
+                            alt="star"
+                            className="w-[15px] h-[15px]"
+                          />
+                        ))}
+                      </div>
 
-                    <span className="text-sm font-semibold text-black">5</span>
+                      <span className="text-sm font-semibold text-black">
+                        5
+                      </span>
+                    </div>
                   </div>
-                </div>
                 </div>
               </div>
             </div>
@@ -220,7 +222,6 @@ function Testimonials() {
         <div className="px-6 lg:px-16 py-6">
           <div className="">
             <div className="max-w-7xl mx-auto flex flex-col gap-6 lg:flex-row lg:items-center lg:justify-between">
-              
               <p className="text-[14px] font-medium text-black">
                 1500 Satisfied Clients Love Our Services
               </p>
@@ -253,19 +254,16 @@ function Testimonials() {
                   </div>
                 </div>
 
-               
-               <button
-  className="group flex items-center gap-2 text-[10px] lg:text-[14px] font-medium bg-white lg:px-3 lg:py-2 rounded-full"
->
-  <span className="relative">
-    View All Reviews
-    <span className="absolute left-0 -bottom-1 h-[1px] w-0 bg-black transition-all duration-300 group-hover:w-full"></span>
-  </span>
+                <button className="group flex items-center gap-2 text-[10px] lg:text-[14px] font-medium bg-white lg:px-3 lg:py-2 rounded-full">
+                  <span className="relative">
+                    View All Reviews
+                    <span className="absolute left-0 -bottom-1 h-[1px] w-0 bg-black transition-all duration-300 group-hover:w-full"></span>
+                  </span>
 
-  <span className="w-6 h-6 flex items-center justify-center rounded-full border border-black/30">
-    <MoveUpRight className="w-4 h-4" />
-  </span>
-</button>
+                  <span className="w-6 h-6 flex items-center justify-center rounded-full border border-black/30">
+                    <MoveUpRight className="w-4 h-4" />
+                  </span>
+                </button>
               </div>
             </div>
           </div>
